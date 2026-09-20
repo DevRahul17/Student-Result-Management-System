@@ -1,242 +1,217 @@
-# RESULT LAB
+# 🎓 Student Result Management System
 
-# Introduction
+<p align="center">
+  <b>A modern desktop-based Student Result Management System built with Python, Tkinter and SQLite.</b>
+</p>
 
-The Result Lab is a project designed to help the examination department of a college manage student details and marks easily. This system allows for easy data entry, retrieval, and management of student information, course details, and exam results.
+<p align="center">
+  <img src="logo.png" width="100" alt="Result Lab Logo">
+</p>
 
-# Features
+---
 
-- **Easy data entry**: The system allows for easy input of student details, course information, and exam results.
-- **Quick retrieval of information**: The system provides a way to retrieve student information, course details, and exam results in a table format.
-- **Marks analysis**: The system provides a way to analyze student marks course-wise, student-wise as well as all together.
+## 📌 About The Project
 
-# Technologies
+**Student Result Management System** is a Python-based desktop application designed to simplify student, course, examination and result management.
 
-- Python 3.11.2
-- SQL
-- Python Modules:
-    - tkinter
-    - sqlite3
-    - matplotlib
-    - pillow
+The application provides an interactive dashboard where administrators can manage academic records and view student results through a centralized SQLite database.
 
-# How to Use
-Check out this video demo of the project in action:
-[Watch Demo](https://youtu.be/IsfKDB7Cm38)
+This project was developed as a practical learning project to strengthen skills in:
 
-Visit the detailed presentation of the project:
-[See Presentation](https://www.canva.com/design/DAFdYAdNUck/yHMfn4-pd4aBTLBG3RNf7g/edit?utm_content=DAFdYAdNUck&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+- Python
+- Tkinter GUI Development
+- SQLite Database Management
+- CRUD Operations
+- Desktop Application Development
+- Git & GitHub
 
-## Dashboard
+---
 
-The dashboard is the main window that opens when the code is run. It consists of various buttons which direct you to the required sub-window. 
+## 🚀 Features
 
-![Dashboard](./demo/1.png)
+### 📊 Dashboard
+- Modern Admin Dashboard
+- Live student statistics
+- Course statistics
+- Examination records
+- Result records
+- Recent student records
 
-### Course
+### 👨‍🎓 Student Management
+- Add student information
+- Manage student records
+- Store contact and academic details
+- View student information
 
-- This sub-window stores information about each course.
+### 📚 Course Management
+- Add courses
+- Course duration
+- Course charges
+- Course descriptions
+- Course reports
 
-![Course](./demo/2.png)
+### 📝 Examination Management
+- Create examination records
+- Store subject-wise marks
+- Track examination details
 
-- Entry Fields: These entries get stored in the database in the “Course Table”.
-    
-    
-    | COURSE NAME |
-    | --- |
-    | DURATION |
-    | BRANCH |
-    | DESCRIPTION |
-- Buttons:
-    
-    
-    | SAVE | Saves data to the database |
-    | --- | --- |
-    | UPDATE | Updates the data present in database |
-    | DELETE | Deletes the data from database |
-    | CLEAR | Clears the entry fields |
-- Search Panel:
-    
-    It is used to read the details present in a specific course.
-    
+### 📈 Result Management
+- Add student marks
+- Calculate results
+- Generate student reports
+- Generate course reports
 
-### Student Details
+### 🗄️ Database Viewer
+- View SQLite database tables
+- Search database records
+- Refresh database data
+- Inspect stored student and result information
 
-- This sub-window stores information about individual students.
+### 🤖 AI Assistant Interface
+- AI Assistant interface included in the dashboard
+- Designed for future AI integration
+- Can later be connected with an AI API/backend
 
-![Student Details](./demo/3.png)
+---
 
-- Entry Fields: These entries get stored in the database in the “Student Table”.
-    
-    
-    | ROLL NO. |
-    | --- |
-    | DATE OF BIRTH |
-    | NAME |
-    | CONTACT |
-    | EMAIL |
-    | ADMISSION YEAR |
-    | MOTHER’S NAME |
-    | FATHER’S NAME |
-    | COURSE |
-    | BRANCH |
-- Drop Box: This helps in restricting the possible entries.
-    
-    
-    | GENDER |
-    | --- |
-    | COURSE |
-- Buttons:
-    
-    
-    | SAVE | Saves data to the database |
-    | --- | --- |
-    | UPDATE | Updates the data present in database |
-    | DELETE | Deletes the data from database |
-    | CLEAR | Clears the entry fields |
-- Search Panel:
-    
-    It is used to read the details present in a specific Roll Number.
-    
+## 🛠️ Technologies Used
 
-### Exam Details
+| Technology | Purpose |
+|---|---|
+| 🐍 Python | Application development |
+| 🖥️ Tkinter | Graphical User Interface |
+| 🗄️ SQLite | Database |
+| 🖼️ Pillow | Image processing |
+| 📊 Matplotlib | Reports / data visualization |
+| 🔧 Git | Version control |
+| 🌐 GitHub | Project hosting |
 
-- This sub-window stores information about exam details.
+---
 
-![Exam Details](./demo/4.png)
+## 📂 Project Structure
 
-- Entry Fields:
-    
-    
-    | ROLL NO. |
-    | --- |
-    | NAME |
-    | SEMESTER |
-    | SUB 1 |
-    | SUB 2 |
-    | SUB 3 |
-    | SUB 4 |
-    | SUB 5 |
-    | SUB 6 |
-- Drop Box:
-    
-    
-    | COURSE |
-    | --- |
-    | EXAM |
-- Buttons:
-    
-    
-    | SAVE | Saves data to the database |
-    | --- | --- |
-    | UPDATE | Updates the data present in database |
-    | DELETE | Deletes the data from database |
-    | CLEAR | Clears the entry fields |
-- Search Panel:
-    
-    It is used to read the details present in a specific Roll Number.
-    
+```text
+Student-Result-Management-System/
+│
+├── dashboard.py
+├── student.py
+├── course_details.py
+├── exam_record.py
+├── result.py
+├── final_report.py
+├── course_report.py
+├── database_viewer.py
+├── create_db.py
+├── add_demo_data.py
+│
+├── student_result_management.db
+├── student_result_management_backup.db
+│
+├── logo.png
+├── chatbot.png
+│
+├── demo/
+│   ├── 1.png
+│   ├── 2.png
+│   ├── 3.png
+│   ├── 4.png
+│   ├── 5.png
+│   ├── 6.png
+│   └── 7.png
+│
+└── .gitignore
+```
 
-### Upload Marks
+---
 
-- It is used to upload marks of each individual from different courses.
-![Upload Marks](./demo/5.png)
-- Drop Box:
-    
-    
-    | ROLL NUMBER |
-    | --- |
-- Search Panel:
-    
-    It is used to read the name of the individual.
-    
-- Entry Fields:
-    
-    
-    | READ ONLY | NAME  |
-    | --- | --- |
-    | READ ONLY | COURSE |
-    | READ ONLY | SUB 1 |
-    | READ ONLY | SUB 2 |
-    | READ ONLY | SUB 3 |
-    | READ ONLY | SUB 4 |
-    | READ ONLY | SUB 5 |
-    | READ ONLY | SUB 6 |
-    | SUBJECT 1/2/3/4/5/6 | MARKS OBTAINED |
-    | SUBJECT 1/2/3/4/5/6 | MAXIMUM MARKS |
-- Buttons:
-    
-    
-    | OBTAINED MARKS | Calculates the total obtained marks |
-    | --- | --- |
-    | TOTAL MARKS | Calculates the total marks |
-    | PERCENTAGE | Calculates the percentage |
-    | SAVE | Saves data to the database |
-    | UPDATE | Updates the data present in database |
-    | DELETE | Deletes the data from database |
-    | CLEAR | Clears the entry fields |
+## ▶️ How To Run
 
-### Student Report
+### 1️⃣ Clone the repository
 
-- It is a report card which displays each individual’s scores and analysis.
+```bash
+git clone https://github.com/DevRahul17/Student-Result-Management-System.git
+```
 
-![Student Report](./demo/6.png)
+### 2️⃣ Open the project
 
-- Search Panel:
-    
-    It is used to read the details present in a specific Roll Number.
-    
-- Entry Fields:
-    
-    
-    | READ ONLY | NAME |
-    | --- | --- |
-    | READ ONLY | COURSE |
-    | READ ONLY | BRANCH |
-    | READ ONLY | D.O.B |
-    | READ ONLY | MOTHER’S NAME |
-    | READ ONLY | FATHER’S NAME |
-    | READ ONLY | MARKS OBTAINED |
-    | READ ONLY | TOTAL PERCENTAGE |
-- Graph:
-    - A bar graph depicting marks obtained in each subject by the individual.
-- Buttons:
-    
-    
-    | CLEAR | Clears the entry fields |
-    | --- | --- |
+```bash
+cd Student-Result-Management-System
+```
 
-### Course Report
+### 3️⃣ Install required packages
 
-- It is the analysis of the performance of the students in a particular course.
+```bash
+pip install pillow matplotlib
+```
 
-![Course Report](./demo/7.png)
+### 4️⃣ Run the application
 
-- Search Panel:
-    
-    It is used to read the details present in a specific Roll Number.
-    
-- Entry Fields:
-    
-    
-    | READ ONLY | TOTAL CANDIDATES |
-    | --- | --- |
-    | READ ONLY | CANDIDATES PASSED |
-    | READ ONLY | CANDIDATES FAILED |
-    | READ ONLY | AVERAGE MARKS |
-    | READ ONLY | HIGHEST MARKS |
-    | READ ONLY | LOWEST MARKS |
-- Buttons:
-    
-    
-    | CLEAR | Clears the entry fields |
-    | --- | --- |
+```bash
+python dashboard.py
+```
 
-# Team - Oopsie here :)
+---
 
-This project was successfully developed by the contribution of the following team members:
+## 💻 Application
 
-- Payal Narwal (CSE-AI , 2026)
-- Prachi Verma (CSE-AI , 2026)
-- Shatakshi Bansal (CSE-AI , 2026)
+The application includes a centralized dashboard for managing:
 
+```text
+Students
+   ↓
+Courses
+   ↓
+Examinations
+   ↓
+Marks
+   ↓
+Results
+   ↓
+Reports
+```
+
+---
+
+## 📸 Screenshots
+
+Screenshots and demo images are available in the [`demo`](demo/) folder.
+
+---
+
+## 🔮 Future Improvements
+
+Planned improvements include:
+
+- 🤖 Real AI-powered assistant
+- 🌐 Web-based version
+- 🔐 Admin authentication
+- 📱 Responsive interface
+- ☁️ Cloud database support
+- 📊 Advanced analytics
+- 📤 Export reports to PDF/Excel
+- 🔔 Notification system
+- 👥 Multiple user roles
+
+---
+
+## 👨‍💻 Author
+
+### Rahul Kumar
+
+**GitHub:**  
+https://github.com/DevRahul17
+
+**Project:**  
+Student Result Management System
+
+---
+
+## ⭐ Support
+
+If you find this project useful, consider giving the repository a ⭐ on GitHub.
+
+---
+
+## 📄 License
+
+This project is created for educational and learning purposes.
